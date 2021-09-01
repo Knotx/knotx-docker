@@ -39,8 +39,6 @@ tasks {
         ))
     }
 
-    named("check").dependsOn("rat")
-
     withType<DockerBuildImage>() {
         dependsOn("rat")
     }
