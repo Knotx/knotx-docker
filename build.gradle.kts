@@ -31,15 +31,12 @@ repositories {
 tasks {
     named<org.nosphere.apache.rat.RatTask>("rat") {
         excludes.addAll(listOf(
-                "*.md", // docs
-                "gradle/wrapper/**", "gradle*", "**/build/**", // Gradle
-                "*.iml", "*.ipr", "*.iws", "*.idea/**", // IDEs
-                ".github/*"
+            "**/*.md", // docs
+            "gradle/wrapper/**", "gradle*", "**/build/**", // Gradle
+            "*.iml", "*.ipr", "*.iws", "*.idea/**", // IDEs
+            "**/generated/*", "**/*.adoc", "**/resources/**", // assets
+            ".github/*"
         ))
-    }
-
-    named("check") {
-        dependsOn("rat")
     }
 
     withType<DockerBuildImage>() {
