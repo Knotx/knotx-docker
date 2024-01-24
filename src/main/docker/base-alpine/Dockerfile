@@ -14,11 +14,10 @@
 #
 # A base Dockerfile for Knot.x Alpine
 
-FROM openjdk:8-jre-alpine
+FROM openjdk:11-jdk-slim
 LABEL maintainer="Knot.x Project"
 
 COPY ./ /usr/local/
-RUN apk add --update bash && rm -rf /var/cache/apk/*
 RUN chmod +x /usr/local/knotx/bin/knotx
 
 # Set path

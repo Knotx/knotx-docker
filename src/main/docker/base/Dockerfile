@@ -14,7 +14,7 @@
 #
 # A base Dockerfile for Knot.x
 
-FROM openjdk:8-jre
+FROM openjdk:11-jdk
 LABEL maintainer="Knot.x Project"
 
 COPY ./ /usr/local/
