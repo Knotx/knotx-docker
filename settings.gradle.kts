@@ -20,7 +20,7 @@ pluginManagement {
     val version: String by settings
     plugins {
         id("io.knotx.release-base") version version
-        id("com.bmuschko.docker-remote-api") version "6.4.0"
+        id("com.bmuschko.docker-remote-api") version "9.4.0"
         id("org.nosphere.apache.rat") version "0.7.0"
     }
     repositories {
