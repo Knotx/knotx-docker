@@ -3,6 +3,8 @@ All notable changes to `knotx-docker` will be documented in this file.
 
 ## Unreleased
 List of changes that are finished but not yet released in any final version.
+                
+## 2.4.0
 - [PR-30](https://github.com/Knotx/knotx-docker/pull/30) Upgrade Docker images to JDK 11, upgrade Gradle to 7.6.3
          
 ## 2.3.1
